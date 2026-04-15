@@ -1,0 +1,14 @@
+# Disable all Actuator endpoints in production.
+management:
+  endpoints:
+    enabled-by-default: false
+  endpoint:
+    health:
+      enabled: false
+
+# Disable OpenAPI / Swagger UI in production.
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false

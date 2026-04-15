@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: common-validator
+  servlet:
+    multipart:
+      # Limit inbound XML body size to 10 MB
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+server:
+  port: 8080
+
+
+# Logging
+logging:
+  level:
+    com.dbna: DEBUG
+
